@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Bai Jamjuree", sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 header {
   background-image: url(./image/background.png);
   background-position: center;
@@ -24,7 +27,7 @@ header a {
   text-decoration: none;
 }
 header .img {
-  max-width: 125px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 135px;
 }
@@ -85,6 +88,7 @@ header p {
 /* section keep */
 .keep{
     padding: 150px 0px;
+    position: relative;
 }
 .keep-text{
     max-width: 730px;
@@ -115,8 +119,9 @@ padding: 19px 0px 80px 0px;
     display: flex;
     gap: 110px;
 }
-.keep-left-part{
-    max-width: 752px;
+.keep-left-part img{
+    max-width: 100%;
+    left: 0;
 }
 .right-part-texts{
     display: flex;
@@ -126,7 +131,6 @@ padding: 19px 0px 80px 0px;
 }
 .right-part-text h3{
     color: #4C545C;
-    font-family: Bai Jamjuree SemiBold;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -136,7 +140,6 @@ padding: 19px 0px 80px 0px;
 .right-part-text p{
     max-width: 350px;
     color: #9EABB2;
-font-family: Bai Jamjuree;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -153,7 +156,6 @@ margin-top: 8px;
     padding: 19px 0px 111px 0px;
     color: #9EABB2;
 text-align: center;
-font-family: Bai Jamjuree;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -161,7 +163,7 @@ line-height: 30px; /* 166.667% */
 letter-spacing: 0.135px;
 }
 .accsess-parts img{
-    width: 100%;
+    max-width: 100%;
 }
 /* workflow */
 .workflow-parts{
@@ -176,7 +178,6 @@ letter-spacing: 0.135px;
 .workflow-parts p{
     color: #9EABB2;
 text-align: center;
-font-family: Bai Jamjuree;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -199,7 +200,6 @@ padding: 19px 0 76px 0;
 .cards .card h4{
     color: #4C545C;
 text-align: center;
-font-family: Bai Jamjuree SemiBold;
 font-size: 24px;
 font-style: normal;
 font-weight: 600;
@@ -228,7 +228,6 @@ img:hover{
 }
 /*clipboard  */
 .clipboard{
-    padding-top: 161px;
     padding-bottom: 150px;
 }
 .clipboard-part{
@@ -483,7 +482,8 @@ color: #26BBA4;
       }
       .icons{
         margin-top: 50px;
-          top: 100%;
+        text-align: center;
+          top: 95%;
           right: 70%;
       }
     }
